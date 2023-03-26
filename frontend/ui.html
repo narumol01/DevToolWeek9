@@ -5,28 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWDEV_Week9</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>week9</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="container-sm" style="margin-top: 5%;">
         <form>
             <div class="form-group">
-                <label>Name</label>
-                <input class="form-control" id="Name" placeholder="Name" onchange="input_name(event)">
+                <label> <b>Name</b></label>
+                <input class="form-control" id="Name" placeholder="Enter Name" onchange="input_name(event)">
                 <label>Surname</label>
-                <input  class="form-control" id="Surname" placeholder="Surname" onchange="input_surname(event)">
+                <input class="form-control" id="Surname" placeholder="Enter Surname" onchange="input_surname(event)">
                 <label>Student ID</label>
-                <input class="form-control" id="SID" placeholder="63xxxxxx" onchange="input_sid(event)">
+                <input class="form-control" id="SID" placeholder="Enter ID" onchange="input_sid(event)">
                 <label>Select Image to Convert</label>
-                <input type="file" class="form-control" name="filename" accept="image/gif, image/jpeg, image/png" name="image" id="file"
-                    onchange="convert64(event)">
+                <input type="file" class="form-control" name="filename" accept="image/gif, image/jpeg, image/png"
+                    name="image" id="file" onchange="convert64(event)">
             </div>
         </form>
     </div>
@@ -50,13 +52,13 @@
     let surname;
     let sid;
     let imageString;
-    function input_name(event){
+    function input_name(event) {
         name = event.target.value;
     }
-    function input_surname(event){
+    function input_surname(event) {
         surname = event.target.value;
     }
-    function input_sid(event){
+    function input_sid(event) {
         sid = event.target.value;
     }
 
@@ -92,8 +94,8 @@
         })
         const response = await request.json();
         document.getElementById("c-image").src = response.processed_image
-        document.getElementById("c-image").width = "400";
-        document.getElementById("c-image").height = "400";
+        document.getElementById("c-image").width = "350";
+        document.getElementById("c-image").height = "350";
     }
 
 </script>

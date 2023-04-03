@@ -4,6 +4,9 @@ https://drive.google.com/file/d/1ofZbJVPjylmArb5xTm68K0uFypGg2WIx/view?usp=shari
 # DevToolWeek10
 ลิงค์คลิป
 
+# Check
+docker ps -a
+docker images
 
 
 

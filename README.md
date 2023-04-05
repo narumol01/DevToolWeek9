@@ -3,6 +3,7 @@
 https://drive.google.com/file/d/1ofZbJVPjylmArb5xTm68K0uFypGg2WIx/view?usp=sharing
 # DevToolWeek10
 ลิงค์คลิป
+https://drive.google.com/file/d/1KGDYAdGOzTkK_Q2K_JRc6t1sxP91OSO-/view?usp=sharing
 
 # Check
 ```
@@ -13,7 +14,6 @@ docker ps -a
 docker images
 ```
 
- # test
 
 # Install jenkins, docker, docker-compose, and git 
 
